@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@utility glow-red{
+box-shadow: 0 0 0 1px rgba(190, 18, 60, 0.35), 0 0 18px rgba(225, 29, 72, 0.35), 0 0 45px rgba(225, 29, 72, 0.18);
+};
+  
+@layer components {
+  .btn-danger{
+    @apply flex justify-center items-center
+     rounded-2xl
+     bg-linear-to-b
+     from-red-500 to-red-700
+     text-white
+      transition-all duration-300
+       hover:from-red-400 hover:to-red-600
+       dark:from-red-500 dark:to-red-800
+       dark:hover:from-red-400 dark:hover:to-red-700
+       cursor-pointer;
+  }
+  .btn-empty{
+    @apply  flex justify-center items-center
+     border rounded-2xl
+     border-stone-900/30
+     text-stone-800
+     dark:border-white/30
+     dark:text-stone-100
+       hover:border-red-600 hover:text-red-700 hover:bg-red-600/8
+        dark:hover:border-red-400 dark:hover:text-red-400 dark:hover:bg-red-400/10
+        cursor-pointer;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
