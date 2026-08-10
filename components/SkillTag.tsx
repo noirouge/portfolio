@@ -46,6 +46,8 @@ export default function SkillTag({tag}:Props) {
             return "Tailwind";
           case "typescript":
             return "Typescript";
+            case "react-native":
+          return "React Native";
 default: return "Default";
         }
     }

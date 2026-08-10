@@ -16,6 +16,18 @@ export const projects: Project[] = [
         codeUrl: "https://github.com/noirouge/minesweeper-js",
         demoUrl: "https://noirouge.github.io/minesweeper-js/",
     },
+    {
+    image: "whoistheimposter.png",
+    title: "Who Is the Impostor?",
+    description: "Local party game where the phone gets passed around. Everyone gets the same word except the impostor, who gets a similar one and has to blend in until they're found out",
+    descriptionPoints: [
+        "Secret role and word assignment, one turn at a time",
+        "Discussion and voting phase with round-based elimination",
+        "Persistent players with their own photo and turn order",
+    ],
+    mainTechs: ["react-native", "typescript"],
+    codeUrl: "https://github.com/noirouge/game-who-is-the-imposter-react-native"
+}
 ]
 
 export const en = {

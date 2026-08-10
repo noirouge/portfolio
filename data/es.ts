@@ -16,6 +16,18 @@ export const projects:Project[] = [
         codeUrl: "https://github.com/noirouge/minesweeper-js",
         demoUrl: "https://noirouge.github.io/minesweeper-js/",
     },
+    {
+        image: "whoistheimposter.png",
+        title: "¿Quien es el impostor?",
+        description: "Juego de fiesta local para pasar el teléfono entre jugadores. A todos les toca la misma palabra menos al impostor, que recibe una parecida y tiene que disimular hasta que lo descubran",
+        descriptionPoints: [
+            "Reparto de roles y palabras en secreto, turno por turno",
+            "Fase de debate y votación con eliminación por rondas",
+            "Jugadores persistentes con foto propia y orden de turnos",
+        ],
+        mainTechs: ["react-native", "typescript"],
+        codeUrl: "https://github.com/noirouge/game-who-is-the-imposter-react-native"
+    }
 ]
 
 export const es = {
