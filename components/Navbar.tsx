@@ -9,6 +9,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpened, setMenuOpened] = useState(false);
 
+  
 
   const handleMenu = () => {
     if(menuOpened) setMenuOpened(false);
@@ -25,7 +26,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className={`fixed top-0 w-full z-40 transition-colors duration-300 
+    <nav className={`fixed w-screen top-0 z-40 transition-colors duration-300 
     ${scrolled || menuOpened ? 'bg-orange-50/70 dark:bg-black/80 backdrop-blur border-b border-stone-900/15 dark:border-white/15' : 'border-b border-transparent'}
     `}>
      <div className=" max-w-6xl mx-auto px-6 py-4">
