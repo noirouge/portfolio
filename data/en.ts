@@ -26,7 +26,8 @@ export const projects: Project[] = [
         "Persistent players with their own photo and turn order",
     ],
     mainTechs: ["react-native", "typescript"],
-    codeUrl: "https://github.com/noirouge/game-who-is-the-imposter-react-native"
+    codeUrl: "https://github.com/noirouge/game-who-is-the-imposter-react-native",
+     demoUrl: "https://whoimposter.santanadd.dev/",
 }
 ]
 
