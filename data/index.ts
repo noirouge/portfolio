@@ -1,5 +1,31 @@
 import Project from "@/types/Project";
 import Skill from "@/types/Skill";
+import Tag from "@/types/Tag";
+
+export const tagNames:Record<Tag, string> = {
+    'react': 'React',
+    'react-native': 'React Native',
+    'angular': 'Angular',
+    'vue': 'VUE',
+    'bootstrap': 'Bootstrap',
+    'css': 'CSS',
+    'docker': 'Docker',
+    'dotnet': '.NET',
+    'express': 'Express',
+    'firebase': 'Firebase',
+    'git': 'GIT',
+    'github': 'Github',
+    'html': 'HTML',
+    'javascript': 'Javascript',
+    'mongodb': 'MongoDB',
+    'nextjs': 'NextJS',
+    'node': 'NodeJS',
+    'postgresql': 'PostgreSQL',
+    'sqlserver': 'SQL Server',
+    'tailwind': 'Tailwind',
+    'typescript': 'Typescript',
+    'linkedin': 'LinkedIn',
+};
 
 export const skills:Skill[] = [
     {
@@ -8,7 +34,7 @@ export const skills:Skill[] = [
     },
     {
         section: 'Backend',
-        tags: ['dotnet', 'node' ]
+        tags: ['dotnet', 'node', 'express', 'mongodb', 'sqlserver', 'postgresql', 'firebase' ]
     },
     // {
     //     section: 'Tools',

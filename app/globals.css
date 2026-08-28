@@ -12,6 +12,19 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@utility animate-float{
+animation: float 4s ease-in-out infinite;
+};
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@utility spotlight-red{
+background: radial-gradient(320px circle at var(--x, 50%) var(--y, 50%), rgba(225, 29, 72, 0.16), transparent 65%);
+};
+
 @utility glow-red{
 box-shadow: 0 0 0 1px rgba(190, 18, 60, 0.35), 0 0 18px rgba(225, 29, 72, 0.35), 0 0 45px rgba(225, 29, 72, 0.18);
 };

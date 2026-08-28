@@ -68,6 +68,9 @@ export const es = {
             "Mejora continua del rendimiento, estabilidad y escalabilidad del sistema.",
         ]
     },
+    skills: {
+        all: "Todo"
+    },
     contact: "Trabajemos Juntos",
 
 };

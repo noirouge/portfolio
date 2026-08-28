@@ -68,5 +68,8 @@ export const en = {
             "Continuous improvement of system performance, stability and scalability.",
         ]
     },
+    skills: {
+        all: "All"
+    },
     contact: "Let's Work Together"
 } satisfies Dictionary;
