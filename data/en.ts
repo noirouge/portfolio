@@ -3,6 +3,19 @@ import type { Dictionary } from "./es";
 
 export const projects: Project[] = [
     {
+        image: "loan-system-api.svg",
+        title: "Loan System API",
+        description: "REST API for a real informal lending business. There are no fixed installments: interest is charged monthly on the balance and, if it goes unpaid, it compounds. Handles customers, loans, payments and the business cash box.",
+        descriptionPoints: [
+            "Append-only ledger: balances are computed from immutable entries and mistakes are fixed with reversals",
+            "Idempotent payments with row locking to prevent duplicate charges",
+            "JWT authentication with refresh tokens and admin and worker roles",
+            "Automatic monthly interest charges, audit log and integration tests",
+        ],
+        mainTechs: ["dotnet", "postgresql"],
+        codeUrl: "https://github.com/noirouge/loan-system-api",
+    },
+    {
         image: "minesweeperjs.png",
         title: "MinesweeperJS",
         description: "The classic Minesweeper rebuilt from scratch. Board generated at runtime, neighboring-bomb calculation and recursive opening of empty areas with a single click.",

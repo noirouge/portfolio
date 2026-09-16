@@ -2,6 +2,19 @@ import Project from "@/types/Project";
 
 export const projects:Project[] = [
     {
+        image: "loan-system-api.svg",
+        title: "Sistema de Préstamos API",
+        description: "API REST para un negocio real de préstamos informales. No hay cuotas fijas: el interés se cobra cada mes sobre el saldo y, si no se paga, se capitaliza. Maneja clientes, préstamos, pagos y la caja del negocio.",
+        descriptionPoints: [
+            "Ledger append-only: el saldo se calcula desde asientos inmutables y los errores se corrigen con reversiones",
+            "Pagos idempotentes con bloqueo de fila para evitar cobros duplicados",
+            "Autenticación JWT con refresh tokens y roles de administrador y empleado",
+            "Cargo de interés mensual automático, auditoría y pruebas de integración",
+        ],
+        mainTechs: ["dotnet", "postgresql"],
+        codeUrl: "https://github.com/noirouge/loan-system-api",
+    },
+    {
         image: "minesweeperjs.png",
         title: "BuscaminasJS",
         description: "El buscaminas clásico reconstruido desde cero. Tablero generado en tiempo de ejecución, cálculo de bombas vecinas y apertura recursiva de las zonas vacías con un solo clic.",

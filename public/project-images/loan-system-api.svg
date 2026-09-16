@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" font-family="ui-monospace, Consolas, Menlo, monospace">
+  <defs>
+    <radialGradient id="glow" cx="80%" cy="0%" r="90%">
+      <stop offset="0" stop-color="#e11d48" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#e11d48" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="#0c0a09"/>
+  <rect width="1000" height="1000" fill="url(#grid)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+
+  <g transform="translate(50 20) scale(0.9)">
+  <!-- WINDOW -->
+  <rect x="60" y="70" width="880" height="535" rx="24" fill="#1c1917" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M60 94a24 24 0 0 1 24-24h832a24 24 0 0 1 24 24v36H60z" fill="#292524"/>
+  <circle cx="100" cy="100" r="9" fill="#ef4444"/><circle cx="130" cy="100" r="9" fill="#f59e0b"/><circle cx="160" cy="100" r="9" fill="#22c55e"/>
+  <text x="500" y="108" text-anchor="middle" font-size="22" fill="#a8a29e">LoanSystemAPI · v1</text>
+
+  <g font-size="26" font-weight="700">
+    <rect x="100" y="165" width="96" height="42" rx="8" fill="#10b981"/><text x="148" y="194" text-anchor="middle" fill="#ffffff" font-size="20">POST</text>
+    <text x="220" y="195" fill="#e7e5e4">/api/auth/login</text>
+
+    <rect x="100" y="230" width="96" height="42" rx="8" fill="#10b981"/><text x="148" y="259" text-anchor="middle" fill="#ffffff" font-size="20">POST</text>
+    <text x="220" y="260" fill="#e7e5e4">/api/loans</text>
+
+    <rect x="100" y="295" width="96" height="42" rx="8" fill="#10b981"/><text x="148" y="324" text-anchor="middle" fill="#ffffff" font-size="20">POST</text>
+    <text x="220" y="325" fill="#e7e5e4">/api/loans/{id}/payments</text>
+
+    <rect x="100" y="360" width="96" height="42" rx="8" fill="#3b82f6"/><text x="148" y="389" text-anchor="middle" fill="#ffffff" font-size="20">GET</text>
+    <text x="220" y="390" fill="#e7e5e4">/api/loans/{id}</text>
+
+    <rect x="100" y="425" width="96" height="42" rx="8" fill="#10b981"/><text x="148" y="454" text-anchor="middle" fill="#ffffff" font-size="20">POST</text>
+    <text x="220" y="455" fill="#e7e5e4">/api/cash-entries/expense</text>
+
+    <rect x="100" y="490" width="96" height="42" rx="8" fill="#3b82f6"/><text x="148" y="519" text-anchor="middle" fill="#ffffff" font-size="20">GET</text>
+    <text x="220" y="520" fill="#e7e5e4">/api/customers</text>
+  </g>
+  <text x="100" y="578" font-size="20" fill="#78716c">JWT · Bearer &lt;access token&gt;</text>
+
+  <!-- RESPONSE -->
+  <rect x="60" y="630" width="880" height="300" rx="24" fill="#1c1917" stroke="#e11d48" stroke-opacity=".55" stroke-width="2"/>
+  <text x="100" y="680" font-size="20" fill="#a8a29e">200 OK · GET /api/loans/{id}</text>
+  <g font-size="25">
+    <text x="100" y="720" fill="#e7e5e4">{</text>
+    <text x="130" y="752"><tspan fill="#fb7185">"balance"</tspan><tspan fill="#e7e5e4">: {</tspan></text>
+    <text x="160" y="784"><tspan fill="#fb7185">"principal"</tspan><tspan fill="#e7e5e4">: </tspan><tspan fill="#fbbf24">800.00</tspan><tspan fill="#e7e5e4">,</tspan></text>
+    <text x="160" y="816"><tspan fill="#fb7185">"interest"</tspan><tspan fill="#e7e5e4">: </tspan><tspan fill="#fbbf24">124.00</tspan><tspan fill="#e7e5e4">,</tspan></text>
+    <text x="160" y="848"><tspan fill="#fb7185">"total"</tspan><tspan fill="#e7e5e4">: </tspan><tspan fill="#fbbf24">924.00</tspan></text>
+    <text x="130" y="880" fill="#e7e5e4">}</text>
+    <text x="100" y="908" fill="#e7e5e4">}</text>
+  </g>
+  </g>
+</svg>
