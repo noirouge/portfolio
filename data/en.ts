@@ -53,7 +53,7 @@ export const en = {
     },
     hero: {
         title: "Software Developer",
-        description: "Full-Stack Developer with experience in enterprise ERP systems, where I learned that a misunderstood process costs more than a bug. I get involved in the whole development cycle, from understanding the problem to seeing it up and running. What drives me most is what I don't know how to solve yet.",
+        description: "Full-Stack Developer specialized in .NET and React, with three years of experience building enterprise ERP systems. I design APIs, model complex business logic and build operations-focused interfaces, taking part in the entire software lifecycle, from requirements analysis to production support.",
         scroll: "Scroll" 
     },
     buttons: {
@@ -82,7 +82,10 @@ export const en = {
         ]
     },
     skills: {
-        all: "All"
+        all: "All",
+        frontend: "Frontend",
+        backend: "Backend",
+        ai: "AI Tools"
     },
     contact: "Let's Work Together"
 } satisfies Dictionary;

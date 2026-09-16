@@ -8,6 +8,9 @@ export const tagNames:Record<Tag, string> = {
     'angular': 'Angular',
     'vue': 'VUE',
     'bootstrap': 'Bootstrap',
+    'claude': 'Claude',
+    'codex': 'Codex',
+    'copilot': 'GitHub Copilot',
     'css': 'CSS',
     'docker': 'Docker',
     'dotnet': '.NET',
@@ -29,12 +32,16 @@ export const tagNames:Record<Tag, string> = {
 
 export const skills:Skill[] = [
     {
-        section: 'Frontend',
+        section: 'frontend',
         tags: ['typescript', 'javascript', 'react', 'vue', 'angular', 'tailwind', 'bootstrap', 'nextjs']
     },
     {
-        section: 'Backend',
+        section: 'backend',
         tags: ['dotnet', 'node', 'express', 'mongodb', 'sqlserver', 'postgresql', 'firebase' ]
+    },
+    {
+        section: 'ai',
+        tags: ['claude', 'codex', 'copilot']
     },
     // {
     //     section: 'Tools',

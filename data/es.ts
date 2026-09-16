@@ -53,7 +53,7 @@ export const es = {
     },
     hero:{
         title: "Desarrollador de Software",
-        description: "Desarrollador Full-Stack con experiencia en sistemas ERP empresariales, donde aprendí que un proceso mal entendido cuesta más que un bug. Me involucro en todo el ciclo de desarrollo, desde entender el problema hasta verlo funcionando. Lo que más me motiva es lo que todavía no sé resolver.",
+        description: "Desarrollador Full-Stack especializado en .NET y React, con tres años de experiencia en el desarrollo de sistemas ERP empresariales. Diseño APIs, modelo lógica de negocio compleja y construyo interfaces orientadas a la operación, participando en todo el ciclo de vida del software, desde el análisis de requerimientos hasta el soporte en producción.",
         scroll: "Desplazarse"
     },
     buttons: {
@@ -82,7 +82,10 @@ export const es = {
         ]
     },
     skills: {
-        all: "Todo"
+        all: "Todo",
+        frontend: "Frontend",
+        backend: "Backend",
+        ai: "Herramientas de IA"
     },
     contact: "Trabajemos Juntos",
 

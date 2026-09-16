@@ -27,14 +27,14 @@ export default function Skills() {
         <div className="flex flex-wrap justify-center gap-2 my-8">
             <button onClick={() => setFilter("all")} className={`${filter === "all" ? 'btn-danger' : 'btn-empty'} h-8 px-4 font-mono text-xs font-bold uppercase tracking-widest`}>{t.skills.all}</button>
             {sections.map(section => (
-            <button key={section} onClick={() => setFilter(section)} className={`${filter === section ? 'btn-danger' : 'btn-empty'} h-8 px-4 font-mono text-xs font-bold uppercase tracking-widest`}>{section}</button>
+            <button key={section} onClick={() => setFilter(section)} className={`${filter === section ? 'btn-danger' : 'btn-empty'} h-8 px-4 font-mono text-xs font-bold uppercase tracking-widest`}>{t.skills[section]}</button>
             ))}
         </div>
 
         {/* GRID + SPOTLIGHT */}
         <div onMouseMove={moveSpotlight} className="group relative w-full max-w-4xl overflow-hidden rounded-3xl border border-stone-900/15 dark:border-white/12 bg-white/40 dark:bg-neutral-950/40 p-5 sm:p-8">
             <div className="spotlight-red pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+            <div className="relative grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
                 {tags.map((skill, index) => (
                 <SkillCard tag={skill.tag} index={index} dimmed={filter !== "all" && filter !== skill.section} key={skill.tag} />
                 ))}

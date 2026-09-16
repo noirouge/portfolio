@@ -1,7 +1,7 @@
 import Tag from "./Tag";
 
 type Skill = {
-    section: string;
+    section: "frontend" | "backend" | "ai";
     tags: Tag[];
 }
 
