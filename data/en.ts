@@ -50,7 +50,7 @@ export const en = {
         video: "Watch Video",
         codigo: "View Code"
     },
-    resume: "https://drive.google.com/file/d/1kMV3bBcapKReA01ZQQp59MfPSGAvFeQV/view",
+    resume: "/cv/Darlin%20Santana%20Curriculum%20EN.pdf",
     projects: projects,
     experience: {
         job: "Ethical Pharmaceutical",
